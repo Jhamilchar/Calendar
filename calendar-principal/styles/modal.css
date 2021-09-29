@@ -1,0 +1,27 @@
+.modal {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    margin: unset;
+    padding-inline: 3rem;
+    padding-block: 1.5rem;
+    max-inline-size: 28rem;
+    border-radius: .25rem;
+    inline-size: 100%;
+    border: none;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.modal[open] {
+    display: flex;
+}
+
+.modal::backdrop {
+    background: rgb(0, 0, 0, .3);
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+}
